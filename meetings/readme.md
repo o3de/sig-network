@@ -24,7 +24,8 @@ Below is a list of all prior completed meetings and related resources.
 
 | No   | Date       | Time | Agenda  | Media | Notes | Resources |
 | ---- | ---------- | ---- | ------- | ----- | ----- | ---- |
-| 0001 | 2021-00-00 | 0000 UTC | n/a | n/a | Link | Link |
+| 0001 | 2021-06-24 | 0000 UTC | n/a | n/a | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20210624.md) | Link |
+| 0002 | 2021-09-14 | 0000 UTC | [Link](https://github.com/o3de/sig-network/issues/4) | n/a | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20210914.md) | Link |
 
 # General Resources
 
