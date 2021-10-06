@@ -1,4 +1,4 @@
-# Networking SIG  meeting - 2021-06-24
+# Networking SIG  meeting - 2021-09-14
 
 **Facilitator/Note taker:** Pip Potter (lmbr-pip)
 
@@ -37,7 +37,7 @@ Have 2 open RFCS in sig-network:
 1. [Network Entity Heirachies](https://github.com/o3de/sig-network/issues/5)
 
 
-## Agenda item 1 - Updated Charter (Networking)
+## Agenda item 1 - Updated Charter
 
 [Charter](https://github.com/o3de/sig-network/blob/main/governance/SIG%20Network%20Charter.md)
 - No new additions proposed
