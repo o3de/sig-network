@@ -27,6 +27,8 @@ Below is a list of all prior completed meetings and related resources.
 | 0001 | 2021-06-24 | 0000 UTC | n/a | n/a | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20210624.md) | Link |
 | 0002 | 2021-09-14 | 0000 UTC | [Link](https://github.com/o3de/sig-network/issues/4) | n/a | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20210914.md) | Link |
 | 0003 | 2021-10-05 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/12) | -| [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211005.md) | n/a
+| 0004 | 2021-10-26 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/16) | -| [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211026.md) | n/a
+
 # General Resources
 
 See [O3DE Resources](https://o3de.github.io/o3de/foundation) for additional information related to any SIG in O3DE.
