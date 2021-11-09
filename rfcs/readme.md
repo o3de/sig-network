@@ -16,3 +16,5 @@ All rfcs follow the pattern of:
 ### October 2021
 * [rfc-net-20211005-1-inputscripting](rfc-net-20211005-1-inputscripting.md)
 * [rfc-net-20211005-2-entityhierarchies](rfc-net-20211005-2-entityhierarchies.md)
+* [rfc-net-20211026-1-flexmatch](rfc-net-20211026-1-flexmatch.md)
+* 
