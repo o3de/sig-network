@@ -146,7 +146,8 @@ Add AWS GameLift Gem matchmaking requests `AWSGameLiftAcceptMatchRequest`, `AWSG
 Update [`SessionNotifications`](https://github.com/o3de/o3de/blob/development/Code/Framework/AzFramework/AzFramework/Session/SessionNotifications.h) with `OnUpdateSessionBegin`
  
 ```
-virtual void OnUpdateSessionBegin(const SessionConfig& sessionConfig) = 0;
+virtual void OnUpdateSessionBegin(const SessionConfig& sessionConfig, const AZStd::string& updateReason) = 0;
+virtual void OnUpdateSessionEnd() = 0;
 ```
  
 #### Server APIs
@@ -157,8 +158,8 @@ Update [`IAWSGameLiftServerRequests`](https://github.com/o3de/o3de/blob/developm
 class IAWSGameLiftServerRequests
 {
 public:
-    virtual void StartMatchBackfill(const StartMatchBackfillRequest& request) = 0;
-    virtual void StopMatchBackfill(const StopMatchBackfillRequest& request) = 0;
+   virtual bool StartMatchBackfill(const AZStd::string& ticketId, const AZStd::vector<AWSGameLift::AWSGameLiftPlayer>& players) = 0;
+   virtual bool StopMatchBackfill(const AZStd::string& ticketId) = 0;
 };
 ```
  
