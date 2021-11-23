@@ -43,16 +43,16 @@ Responsibilities include:
 - Define and maintain code to enable cloud data services communication
 
 ###Cross-cutting Processes
-- Ensuring client and server targets
-- Define communication protocol and stack
-- Define and maintain entity replication network model
-- Responsible for abstraction of console design for dedicated / headless server implementation (core / init)
+- Define client and server build targets for supported platforms, cross-cutting issue with `#sig-core` and `#sig-build`
+- Define communication protocol and stacks.
+- Define and maintain entity replication network model.
+- Responsible for abstraction of console design for dedicated / headless server implementation (core / init).
 - Define and maintain implementation of communication and data transfer between network based tools.
 - Responsible for design and implementation of controller component until matured and moved into simulation SIG.
 - Publish multiplayer component standard architecture to be shared with SIGs for remote simulation (physics/animation)
-- Define and maintain network layer encryption, as a cross-cutting issue with `#sig-security`
-- Define and maintain network testing, as a cross-cutting issue with `#sig-testing`
-- Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities
+- Define and maintain network layer encryption, as a cross-cutting issue with `#sig-security`.
+- Define and maintain network testing, as a cross-cutting issue with `#sig-testing`.
+- Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities.
 
 ## Out of Scope
 - Not responsible for cloud or network services or interopability with such services.
