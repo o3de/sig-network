@@ -5,8 +5,8 @@ Team information may be found in the [readme.md](https://github.com/o3de/sig-net
 Last Updated: **13th Oct 2021**
 
 ## Overview of SIG
-This sig is responsible for all communication mechanisms in O3DE. The SIG defines and owns
-communication protocols, methods and approaches to support O3DE client+server as well as interaction points with cloud services.
+This sig is responsible for communication mechanisms in O3DE related to multiplayer networking and cloud networking. The SIG defines and owns
+communication protocols, methods and approaches to support O3DE client to server, as well as interaction points with cloud services.
 
 Responsibilities include:
 * Secure network transport including client+server interactions over TCP or UDP sockets
