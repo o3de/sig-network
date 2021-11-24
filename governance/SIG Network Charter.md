@@ -5,7 +5,7 @@ Team information may be found in the [readme.md](https://github.com/o3de/sig-net
 Last Updated: **23rd Nov 2021**
 
 ## Overview of SIG
-This sig is responsible for communication mechanisms in O3DE related to multiplayer networking and cloud networking. The SIG defines and owns
+This SIG is responsible for communication mechanisms in O3DE related to multiplayer networking and cloud networking. The SIG defines and owns
 communication protocols, methods and approaches to support O3DE client to server, as well as interaction points with cloud services.
 
 Responsibilities include:
@@ -26,8 +26,8 @@ Responsibilities include:
 - Define and maintain implementation to enable compression and secure communication between endpoints.
 - Define and implement interface to network counters, monitoring, and statistics.
 - Define and implement low level instrumentation APIs.
-- Maintenance of the Multiplayer Sample project.
 - Items that are the core responsibilities of SIG.
+- Maintenance of network sample projects owned by SIG: [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample), [NetSoakTest](https://github.com/o3de/o3de-netsoaktest).
 
 ###Network:
 - Design and maintain client and server protocol communication.
@@ -55,12 +55,13 @@ Responsibilities include:
 - Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities.
 
 ## Out of Scope
+- Not responsible for sample projects unless projects are approved/accepted by SIG.
 - Not responsible for cloud or network services or interopability with such services.
 - Not responsible for 3rd party gems and code for network services. Contributors submitting such integrations are responsible for support.
 - Not responsible for best practices of network or services implementation.
 - Not responsible for networked tools implementation, outside of core responsibilities for multiplayer and cloud services, but may advise teams on best practices.
 - Versioning of communication protocols (not currently a responsibility of the SIG).
-- Support for peer-to-peer connectivity not currently a responsibility of the SIG).
+- Support for peer-to-peer connectivity (not currently a responsibility of the SIG).
 - Definition and implementation of 3rd party distribution platform services interfaces.
 
 
