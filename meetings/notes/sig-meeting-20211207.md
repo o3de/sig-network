@@ -23,6 +23,7 @@
 * Maintainer proposal : https://github.com/o3de/sig-network/issues/25
 * Accepting RFC in final comment period: https://github.com/o3de/sig-network/issues/23
 * Discus how to get community more engaged in RFCs
+* Highlight sig chair elections: https://github.com/o3de/sig-network/issues/27
 
 ## Outcomes from Discussion topics
 * Reviewer accepted by SIG. 
@@ -32,6 +33,8 @@
 - Mailing list to advertise RFCs 
 - lmbr-pip has agenda item on TSC to discuss RFC processes to improve discoverability, engagement
 - Central RFCs as a win - https://github.com/o3de/community/discussions/103
+
+Discussed briefly sig chair elections and how folks can nominate themselves and others
 
 ## Action Items
 Carried from previous meeting(s):
