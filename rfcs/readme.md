@@ -13,8 +13,11 @@ All rfcs follow the pattern of:
 
 ## Recent Accepted RFCS
 
-### October 2021
-* [rfc-net-20211005-1-inputscripting](rfc-net-20211005-1-inputscripting.md)
-* [rfc-net-20211005-2-entityhierarchies](rfc-net-20211005-2-entityhierarchies.md)
-* [rfc-net-20211026-1-flexmatch](rfc-net-20211026-1-flexmatch.md)
-* 
+### 2021
+| RFC                                                                             | Month    | Summary                                                |
+|---------------------------------------------------------------------------------|----------|--------------------------------------------------------|
+| [rfc-net-20211005-1-inputscripting](rfc-net-20211005-1-inputscripting.md)       | October  | Exposes network input to script                        |
+| [rfc-net-20211005-2-entityhierarchies](rfc-net-20211005-2-entityhierarchies.md) | October  | Defines network entity hierarchies                     |
+| [rfc-net-20211026-1-flexmatch](rfc-net-20211026-1-flexmatch.md)                 | October  | Adds Matchmaking support for Amazon GameLift Gem       |
+| [rfc-net-20211207-1-desync-log](rfc-net-20211207-1-desync-log.md)               | December | Defines logging extensions to support desync debugging |
+
