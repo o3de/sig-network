@@ -39,7 +39,7 @@ Responsibilities include:
 - Networking specific serialization (as part of the transport layer).
 
 ###Cloud:
-- Define, standardize, and maintain interfaces to feature based cloud services.
+- Define, standardize, and maintain interfaces for features based on cloud services.
 - Define and maintain code to enable cloud data services communication.
 
 ###Cross-cutting Processes
@@ -52,11 +52,12 @@ Responsibilities include:
 - Publish multiplayer component standard architecture to be shared with SIGs for remote simulation (physics/animation)
 - Define and maintain network layer encryption, as a cross-cutting issue with `#sig-security`.
 - Define and maintain network testing, as a cross-cutting issue with `#sig-testing`.
+- Define and maintain cloud services testing for cloud service components accepted by SIG, as a cross-cutting issue with `#sig-testing`.
 - Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities.
 
 ## Out of Scope
 - Not responsible for sample projects unless projects are approved/accepted by SIG.
-- Not responsible for cloud or network services or interopability with such services.
+- Not responsible for cloud or network services or interoperability with such services.
 - Not responsible for 3rd party gems and code for network services. Contributors submitting such integrations are responsible for support.
 - Not responsible for best practices of network or services implementation.
 - Not responsible for networked tools implementation, outside of core responsibilities for multiplayer and cloud services, but may advise teams on best practices.
