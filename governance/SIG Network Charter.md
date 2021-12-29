@@ -33,7 +33,7 @@ Responsibilities include:
 - Design and maintain client and server protocol communication.
 - Define, publish, and maintain network protocol and data packet design model.
 - Responsible for network presence and state replication.
-- Create and Maintain network simulation tools for testing network conditions.
+- Create and maintain network simulation tools for testing network conditions.
 - Design and maintain multiplayer component architecture supporting client hosted and dedicated server strategies.
 - Define and maintain specific implementation of multiplayer controller component.
 - Networking specific serialization (as part of the transport layer).
@@ -79,7 +79,7 @@ Responsibilities include:
 
 ## Roles and Organization Management
 
-SIG-network adheres to the standards for roles and organization management as specified by [O3DE Foundation](https://github.com/o3de/community). This SIG opts in to updates and modifications to This SIG opts in to updates and modifications to the Foundation's guidance (referred to below as <sig-governance>)
+SIG-network adheres to the standards for roles and organization management as specified by [O3DE Foundation](https://github.com/o3de/community). This SIG opts in to updates and modifications to the Foundation's guidance (referred to below as <sig-governance>).
 
 ## Individual Contributors
 
