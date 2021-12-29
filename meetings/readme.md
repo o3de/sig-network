@@ -12,7 +12,7 @@ O3DE cannot work without the help and input from as many of its community member
 
 ## Agenda Items
 
-The agenda for each meeting is created before the meeting as [an issue on GitHub](https://github.com/o3de/foundation/issues?q=label%3Asig%2Fnetwork+label%3Amtg-agenda+) under the O3DE [SIG-network repository](https://github.com/o3de/sig-network). Please feel free to propose any of your topics, thoughts, or areas you feel are important to discuss on the meeting agenda.
+The agenda for each meeting is created before the meeting as [an issue on GitHub](https://github.com/o3de/sig-network/issues?q=label%3Amtg-agenda+) under the O3DE [SIG-network repository](https://github.com/o3de/sig-network). Please feel free to propose any of your topics, thoughts, or areas you feel are important to discuss on the meeting agenda.
 
 # Previous Meetings
 
