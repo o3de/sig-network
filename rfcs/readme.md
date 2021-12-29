@@ -1,8 +1,8 @@
 # Sig-Network RFCs
-This is where RFCs that have been accepted are kept
+This is where RFCs that have been accepted by SIG-Network are kept.
 
 ## RFC Naming
-All rfcs follow the pattern of:
+RFC naming follows the pattern of:
 
 ```rfc-net-(YYYYMMDD)-(X)-(friendlyname)```
 
