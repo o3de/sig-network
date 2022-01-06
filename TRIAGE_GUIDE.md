@@ -1,19 +1,19 @@
 # # O3DE Network SIG - Issue Triage Guide
 
 # Overview
-This guide covers triaging issues for SIG-Networking. Maintainers are encouraged to use and update this guide to ensure
+This guide covers how to triage GitHub issues for SIG-Network. Maintainers are encouraged to use and update this guide to ensure
 any contributor to SIG-Network understands how issues are handled.
 
 
 ##  Issue Triaging
-Triaging is the process of ensuring a smooth intake of issues into the SIG-network backlog to ensure issues are both relevant to SIG-Network
+Triaging is the process used to handle intake of issues into the SIG-network backlog. The process aims to ensure issues are both relevant to SIG-Network
 and contain sufficient information so that the community can take action.
 
 Process aims to ensure:
 * The issue is appropriate for SIG-Network.
 * The issue has clear information as to the nature of the issue.
 * Issues are regularly maintained and updated until they are resolved.  
-* The issue is an actual issue, rather than a request for help or an issue for another SIG.
+* That reported issues are an actual issues, rather than a request for help or an issue for another SIG.
 
 
 # Process
@@ -38,22 +38,23 @@ If time permits, on the day of triage and before the meeting, create a new threa
 3. Process all new main repository issues. New issues in main repository should have labels `needs-triage` and `sig/network`
    1. Announce issue number and title to those in Discord voice channel so others can follow along
 4. Ensure issue is for SIG-Network. If the issue is not for SIG-Network, remove the `sig/network` label and comment on the issue. If the correct SIG is known 
-    assign it to that SIG otherwise add the `needs-sig` label so the general O3DE issue triage meeting can triage and find the appropriate owners.
+    assign issue to that SIG. Otherwise add the `needs-sig` label so the general O3DE issue triage meeting can find the appropriate owners.
 5. Review the issue and comments and see if it can be accepted
-6. Review the technical implications. If a large change, issue should become an RFC, ask requestor to bring issue back as RFC or to make a feature request, if that would be more appropriate.
+6. Review the technical implications. If a large change, issue should become an RFC, ask requestor to bring issue back as RFC or convert to a feature request, if that would be more appropriate.
 7. Assign a reviewer, if required, to handle follow-up comments, to reproduce the issue or ask questions.
 8. If issue is rejected, assign commenter to reject issue. 
 9. If issue is accepted, remove `needs-triage` label, set priority for issue and add `triage/accepted` label.
-10. For Multiplayer and NetSoak issues, look for issues less than 14 days old that do not have priorities attached.
-    1. These repositories do not have the full set of labels so some of the process above may not apply directly.
+10. If issue is a bug add `kind/bug`, if a feature request add `kind/feature`  or `kind/enhancement` as appropriate.
+11. For Multiplayer and NetSoak issues, look for issues less than 14 days old that do not have priorities attached.
+    1. These repositories do not have the full set of labels, so some of the above process may not apply directly.
 
 
 If time permits:
 * Review any open [blocker](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+label%3Apriority%2Fblocker) and [critical](is:issue is:open label:sig/network label:priority/critical) issues in the main repository:
   * Ensure priority is still valid
   * Assign any required commentators or ask for updates
-* Review any issue open for more than [90 days](is:issue is:open label:sig/network sort:created-asc) and see if its still valid.
-* Review any open `needs-triage` and `needs-sig` issues that may be for SIG-Network
+* Review any issue open for more than [90 days](is:issue is:open label:sig/network sort:created-asc) and see if issue is still valid.
+* Review any open `needs-triage` and `needs-sig` issues that may be for SIG-Network in [O3DE issues](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-sig+label%3Aneeds-triage+).
 
 ## Issue Workflow
 If you are assigned an issue to validate, work with requestor to get enough information to validate the issue.
