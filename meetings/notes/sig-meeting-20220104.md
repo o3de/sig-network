@@ -1,6 +1,6 @@
 ## Meeting Details
 
-- **Date/Time:** December 21st, 2021 @ 05:00pm UTC / 12:00pm ET / 9:00 AM PT
+- **Date/Time:** January 4th, 2022 @ 05:00pm UTC / 12:00pm ET / 9:00 AM PT
 - **Location:** [Discord SIG-Network Voice Room](https://discord.gg/62nq7HP5mP)
 - **Moderator:** Pip Potter (lmbr-pip)
 - **Note Taker** Pip Potter (lmbr-pip)
