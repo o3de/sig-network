@@ -7,11 +7,17 @@ RFC naming follows the pattern of:
 ```rfc-net-(YYYYMMDD)-(X)-(friendlyname)```
 
 #### Notes
-* RFC should be referred to as ```rfc-net-YYYYMMDD-X```, friendly name is to just to aid discovery.
+* RFC should be referred to as ```rfc-net-YYYYMMDD-X```, friendly name is just to aid discovery.
 * ```YYYYMMDD```: Replace with the date of the sig-network meeting that accepted the RFC.
 * ```X``` is a counter for the day, if there are multiple RFCs accepted in a single meeting.
 
 ## Recent Accepted RFCS
+
+### 2022
+| RFC                                                                         | Month   | Summary                        |
+|-----------------------------------------------------------------------------|---------|--------------------------------|
+| [rfc-net-20220118-1-clientserver](rfc-net-20220118-1-clientserver.md)       | January | Client/Server build separation |
+
 
 ### 2021
 | RFC                                                                             | Month    | Summary                                                |
