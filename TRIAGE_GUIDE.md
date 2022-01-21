@@ -50,9 +50,9 @@ If there are questions about what to do with an issue please raise questions wit
       1. If it's a large change then issue should become an RFC or be brought to SIG-Network meeting for discussion. Ask requestor to bring issue back as RFC or start a discussion topic. Add the issue to the next SIG-Network meeting agenda, if that would be more appropriate. 
       2. If issue is for a feature request add `kind/feature`  or `kind/enhancement` as appropriate. Add `feature/networking` or `feature/cloud-service` as appropriate.
    3. Assign a reviewer, if required, to handle follow-up comments, to reproduce the issue or ask for further clarifying information.
-4. **If issue is rejected**: assign commenter to reject issue and provide reason for rejection, add `triage/declined` and close issue
-5. **If issue needs more information**: assign comment to add request for more information and add `triage/needs-information` label.
-6. **If issue is accepted**: remove `needs-triage` label, set priority for issue and add `triage/accepted` label. 
+4. **If issue is rejected**: assign reviewer to reject issue and provide reason for rejection. Add `triage/declined` and close issue
+5. **If issue needs more information**: assign reviewer to add request for more information. Add `triage/needs-information` label.
+6. **If issue is accepted**: remove `needs-triage` label, set priority for issue based on impact (ask other members on call for guidance).  Add `triage/accepted` label. 
 7. Add comments to issue, when appropriate, to capture issue triage decisions.
 
 ### Additional Labels to Consider for Contributors
