@@ -43,16 +43,22 @@ If there are questions about what to do with an issue please raise questions wit
 2. (Main issues only) Ensure issue is for SIG-Network. 
    1. If the issue is not for SIG-Network, remove the `sig/network` label and comment on the issue as to reason why issue is not for SIG-Network. 
    2. If the correct SIG is known assign issue to that SIG. Otherwise, add the `needs-sig` label so the general O3DE issue triage meeting can find the appropriate owners. 
-3. Review the issue and comments to see if it can be accepted. 
-   1. **If issue is a bug**: does it have enough information for someone to reproduce/understand the issue? Do we understand platforms and project setup issue is reported against? 
-      1.  If issue is a bug add the `kind/bug` label
-   2. **If issue is a feature request**: review the technical implications of the request. 
+3. Review the issue and any comments to see if it can be accepted by SIG
+   1. **If issue is a bug**: Check that report has enough information for someone to reproduce or understand the issue?
+   2. **If issue is a feature request**: Review the technical implications of the request. 
       1. If it's a large change then issue should become an RFC or be brought to SIG-Network meeting for discussion. Ask requestor to bring issue back as RFC or start a discussion topic. Add the issue to the next SIG-Network meeting agenda, if that would be more appropriate. 
-      2. If issue is for a feature request add `kind/feature`  or `kind/enhancement` as appropriate. Add `feature/networking` or `feature/cloud-service` as appropriate.
-   3. Assign a reviewer, if required, to handle follow-up comments, to reproduce the issue or ask for further clarifying information.
-4. **If issue is rejected**: assign reviewer to reject issue and provide reason for rejection. Add `triage/declined` and close issue
-5. **If issue needs more information**: assign reviewer to add request for more information. Add `triage/needs-information` label.
-6. **If issue is accepted**: remove `needs-triage` label, set priority for issue based on impact (ask other members on call for guidance).  Add `triage/accepted` label. 
+4. If issue can be **accepted** then:
+   1. If issue is a bug, add the `kind/bug` label.
+   2. If issue is for a feature request, add either `kind/feature` or `kind/enhancement`. Add `feature/networking` or `feature/cloud-service` as appropriate.
+   3. Set a priority for issue based on impact (ask other SIG members on call for guidance).  
+   4. Mark the issue as `triage/accepted`. 
+5. If the issue **requires more information** or is **rejected**, then:
+   1. Assign a reviewer, if required, to handle follow-up comments, to reproduce the issue or ask for further clarifying information.
+   2. **If issue is rejected**: Reviewer/triage leader should reject issue and provide reason for rejection. 
+      1. Mark the issue as `triage/declined`.
+   3. **If issue needs more information**: Reviewer/triage leader should add clear comments requesting the additional information. 
+      1. Mark the issue with `triage/needs-information`. Its recommended that all issues in this state have an assigned reviewer who will track updates until all required information is received. Issue can then be reconsidered for acceptance.
+6. Remove the `needs-triage` label from issue.
 7. Add comments to issue, when appropriate, to capture issue triage decisions.
 
 ### Additional Labels to Consider for Contributors
