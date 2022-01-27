@@ -40,22 +40,34 @@ If there are questions about what to do with an issue please raise questions wit
 
 ### Individual Issue Triage
 1. (Recommendation) Announce issue number and title to those in Discord voice channel, so others can follow along. 
-2. (Main issues only) Ensure issue is for SIG-Network. If the issue is not for SIG-Network, remove the `sig/network` label and comment on the issue. If the correct SIG is known 
-    assign issue to that SIG. Otherwise, add the `needs-sig` label so the general O3DE issue triage meeting can find the appropriate owners. 
-3. Review the issue and comments to see if it can be accepted. 
-   1. If issue is a bug, does it have enough information for someone to reproduce/understand the issue? Do we understand platforms and project setup issue is reported against? 
-   2. Review the technical implications of a feature request. If it's a large change then issue should become an RFC or be brought to SIG-Network meeting for discussion. Ask requestor to bring issue back as RFC or as a discussion topic and add to next SIG-Network meeting agenda, if that would be more appropriate. 
-   3. Assign a reviewer, if required, to handle follow-up comments, to reproduce the issue or ask for further clarifying information. 
-   4. If issue is a bug add the `kind/bug` label, if issue is for a feature request add `kind/feature`  or `kind/enhancement` as appropriate.
-4. If issue is rejected, assign commenter to reject issue and provide reason for rejection.
-5. If issue is accepted, remove `needs-triage` label, set priority for issue and add `triage/accepted` label. 
-6. Add comments to issue, when appropriate, to capture issue triage decisions.
+2. (Main issues only) Ensure issue is for SIG-Network. 
+   1. If the issue is not for SIG-Network, remove the `sig/network` label and comment on the issue as to reason why issue is not for SIG-Network. 
+   2. If the correct SIG is known assign issue to that SIG. Otherwise, add the `needs-sig` label so the general O3DE issue triage meeting can find the appropriate owners. 
+3. Review the issue and any comments to see if it can be accepted by SIG
+   1. **If issue is a bug**: Check that report has enough information for someone to reproduce or understand the issue?
+   2. **If issue is a feature request**: Review the technical implications of the request. 
+      1. If it's a large change then issue should become an RFC or be brought to SIG-Network meeting for discussion. Ask requestor to bring issue back as RFC or start a discussion topic. Add the issue to the next SIG-Network meeting agenda, if that would be more appropriate. 
+4. If issue can be **accepted** then:
+   1. If issue is a bug, add the `kind/bug` label.
+   2. If issue is for a feature request, add either `kind/feature` or `kind/enhancement`. Add `feature/networking` or `feature/cloud-service` as appropriate.
+   3. Set a priority for issue based on impact (ask other SIG members on call for guidance).  
+   4. Mark the issue as `triage/accepted`. 
+5. If the issue **requires more information** or is **rejected**, then:
+   1. Assign a reviewer, if required, to handle follow-up comments, to reproduce the issue or ask for further clarifying information.
+   2. **If issue is rejected**: Reviewer/triage leader should reject issue and provide reason for rejection. 
+      1. Mark the issue as `triage/declined`.
+   3. **If issue needs more information**: Reviewer/triage leader should add clear comments requesting the additional information. 
+      1. Mark the issue with `triage/needs-information`. Its recommended that all issues in this state have an assigned reviewer who will track updates until all required information is received. Issue can then be reconsidered for acceptance.
+6. Remove the `needs-triage` label from issue.
+7. Add comments to issue, when appropriate, to capture issue triage decisions.
 
 ### Additional Labels to Consider for Contributors
 * Consider adding the `good-first-issue` label to identify issues that have straightforward/simple fixes for new contributors to fix. Examples could include config, docs, comments and testing changes.
 * Consider adding the `help-wanted` label for issues that do not have immediate resourcing and contributions by others would be welcome.
 
 If time permits:
+* Review all open [bugs without acceptance](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+-label%3Afeature%2Fnetworking) and ensure they have `triage/accepted`.
+  * Ensures issue that have been assigned to SIG are captured.
 * Review any open [blocker](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+label%3Apriority%2Fblocker) and [critical](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+label%3Apriority%2Fcritical) issues in the main repository:
   * Ensure priority is still valid.
   * Assign any required commentators or ask for updates.
@@ -86,4 +98,15 @@ If an issue with the SIG-Network label has had no updates for a while (14 days),
 ## No Activity for 90 days
 An issue can be removed if it has been abandoned by the requestor. Issues are considered abandoned if there has been no activity for *90* days, esp if issue has had `triage/needs-information` label applied and there has been no follow-up from issue reporter.
 
+## FAQ
+
+1. What should I do if triage rejects my issue?
+   1. Issues should be rejected with clear comments that provide reason for rejection. If you disagree or want to discuss the reason please start a chat in SIG-Network or add as an agenda item for SIG-Network's public meeting.
+   2. If you still do not support SIG-Network's decision, then please raise with the [O3DE TSC](https://github.com/o3de/tsc).
+2. What should I do if I have an urgent issue that cannot not wait for public issue triage?
+   1. Please raise the issue in SIG-Network chat and ask for triage, this is so all SIG has visibility.
+   2. SIG-Chair(s) can appoint a reviewer to ensure issue is triaged as soon as possible.
+   3. If the intent is for you to work on the issue immediately, then please self-assign or work with a maintainer to assign.
+
+## Acknowledgments
 Part of this guide was informed by the [Kubernetes Triage Guide](https://github.com/kubernetes/community/blob/master/contributors/guide/issue-triage.md)
