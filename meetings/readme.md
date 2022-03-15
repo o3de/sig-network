@@ -34,6 +34,7 @@ Below is a list of all prior completed meetings and related resources.
 | 0009 | 2022-01-18 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/38) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20220118.md) | n/a       |
 | 0010 | 2022-02-01 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/42) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20220201.md) | n/a       |
 | 0011 | 2022-02-15 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/44) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20220215.md) | n/a       |
+| 0012 | 2022-03-01 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/45) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20220301.md) | n/a       |
 
 # General Resources
 
