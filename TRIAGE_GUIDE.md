@@ -24,7 +24,7 @@ If time permits, prior to the start of meeting, the Triage Leader will create a 
 
 ## Repositories to Triage
 * Main O3DE repository: https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-triage+label%3Asig%2Fnetwork 
-* Multiplayer Sample: https://github.com/o3de/o3de-multiplayersample/issues
+* Multiplayer Sample: https://github.com/o3de/o3de-multiplayersample/labels/needs-triage
 * NetSoak Test: https://github.com/o3de/o3de-netsoaktest/issues
 
 ## Triage Leader Guide
