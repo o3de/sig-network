@@ -19,20 +19,23 @@ Process aims to ensure that:
 # Process
 SIG-Network triages issues once a week on [Thursdays](https://lists.o3de.org/g/o3de-calendar/viewevent?repeatid=39342&eventid=1263668&calstart=2022-01-20). Anyone is welcome to attend. Triage will be led by SIG chair, co-chair or maintainer (referred to below as *Triage Leader*)
 
-If time permits, prior to the start of meeting, the Triage Leader will create a new thread in the SIG-Network Discord channel and post the links from the *Repositories to Triage* section.
+If time permits, prior to the start of meeting, the Triage Leader will create a new thread in the SIG-Network Discord channel and post the links from the *Triage Links* section.
 * Recommendation is that the Triage Leader sets the thread to automatically archive after 24 hours.
 
-## Repositories to Triage
-* Main O3DE repository: https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-triage+label%3Asig%2Fnetwork 
-* Multiplayer Sample: https://github.com/o3de/o3de-multiplayersample/labels/needs-triage
-* NetSoak Test: https://github.com/o3de/o3de-netsoaktest/issues
+## Triage Links
+1. Open issues with `needs-sig` label: https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-sig
+2. Main O3DE repository: https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-triage+label%3Asig%2Fnetwork 
+3. Multiplayer Sample: https://github.com/o3de/o3de-multiplayersample/labels/needs-triage
+4. NetSoak Test: https://github.com/o3de/o3de-netsoaktest/issues
 
 ## Triage Leader Guide
 1. Join the SIG-Network discord voice channel
 2. Announce yourself as the Triage Leader and wait a few minutes for others to join the call.
 3. Use the *Individual Issue Triage* guide below to process all new issues for SIG:
-   1. Process all [new main repository issues](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-triage+label%3Asig%2Fnetwork )
-   2. Process all the new [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample/issues) and [NetSoak](https://github.com/o3de/o3de-netsoaktest/issues) issues in a similar way.
+   1. Review any open issues with [needs-sig](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-sig) that may be for SIG network
+        1. Remove `needs-sig` and add `sig/network`. These items will now show up when reviewing issues below.    
+   3. Process all [new main repository issues](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-triage+label%3Asig%2Fnetwork)
+   4. Process all the new [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample/labels/needs-triage) and [NetSoak](https://github.com/o3de/o3de-netsoaktest/issues) issues in a similar way.
       1. Look for issues less than 14 days old that do not have priorities attached. 
       2. Note: NetSoakTest and MultiplayerSample repositories do not have the full set of labels, so parts of individual issue triage process may not apply directly.
 
@@ -65,14 +68,19 @@ If there are questions about what to do with an issue please raise questions wit
 * Consider adding the `good-first-issue` label to identify issues that have straightforward/simple fixes for new contributors to fix. Examples could include config, docs, comments and testing changes.
 * Consider adding the `help-wanted` label for issues that do not have immediate resourcing and contributions by others would be welcome.
 
-If time permits:
-* Review all open [bugs without acceptance](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+-label%3Afeature%2Fnetworking) and ensure they have `triage/accepted`.
+## Additional Triage Tasks
+If time permits (select some of these):
+
+* Review all open [bugs without acceptance](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+-label%3Atriage%2Faccepted) and ensure they have `triage/accepted`.
   * Ensures issue that have been assigned to SIG are captured.
 * Review any open [blocker](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+label%3Apriority%2Fblocker) and [critical](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+label%3Apriority%2Fcritical) issues in the main repository:
-  * Ensure priority is still valid.
+  * Ensures priority is still valid. Ensures issues are still valid.
   * Assign any required commentators or ask for updates.
-* Review any issue open for more than [90 days](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+sort%3Acreated-asc) and see if issue is still valid.
-* Review any open `needs-triage` and `needs-sig` issues that may be for SIG-Network in [O3DE issues](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-sig+label%3Aneeds-triage+).
+* Review any PR for the SIG thats more than [30 days old](https://github.com/o3de/o3de/pulls?q=is%3Apr+is%3Aopen+label%3Asig%2Fnetwork+sort%3Acreated-asc) old, ensure PR appears to be active or ask contributor for to update PR or close out. 
+  * Ensures PRs are still active and are not blocked on contributor or maintainer action.  
+* Review issues open for more than [90 days old](https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Asig%2Fnetwork+sort%3Acreated-asc)
+  * Ensures issues are still relevant to SIG. 
+
 
 ## Issue Workflow
 If you are assigned an issue to validate, work with requestor to get enough information to validate the issue.
