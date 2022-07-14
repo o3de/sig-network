@@ -1,9 +1,9 @@
-# Open 3D Engine Special Interest Group on Networking (SIG Network)
+# Open 3D Engine Special Interest Group for Networking (SIG Network)
 
 This repository holds materials for the Open 3D Engine Foundation Special Interest Group for Networking (SIG-Network).
 
 ## Description of SIG Network
-We manage the networking components for O3DE including foundational networking layers, transport, Multiplayer, client/server interactions and Cloud connectivity pieces of O3DE. See the [SIG's charter](governance/SIG%20Network%20Charter.md) for full details.
+We manage communication components for O3DE, including foundational networking layers, transport, multiplayer, client/server interactions and Cloud connectivity pieces of O3DE. See the [SIG's charter](governance/SIG%20Network%20Charter.md) for full details.
 
 ## What the SIG does:
 
@@ -18,7 +18,7 @@ We manage the networking components for O3DE including foundational networking l
 
 * Contact us on [Discord](https://discord.com/invite/o3de). The SIG has a specific chat channel **#sig-network**.
 * Attend any of our public meetings by connecting to the **#sig-network** voice channel on O3DE's Discord server. See the [O3DE Calendar](https://lists.o3de.org/g/o3de-calendar/calendar) for upcoming meetings and details.
-    * The SIG hosts a general meeting once a month, on the third Thursday of the month, to discuss networking features, recently contributed work, pending RFCs and other items of interest to the SIG. Look for the meeting titled **SIG-Network Meeting** on O3DE calendar. [Meeting agendas](https://github.com/o3de/sig-network/issues?q=is%3Aopen+is%3Aissue+label%3Amtg-agenda) are posted in advanced as GitHub issues and anyone can raise issues for discussion.
+    * The SIG hosts a general meeting once a month, on the third Thursday of the month, to discuss networking features, recently contributed work, pending RFCs, and other items of interest to the SIG. Look for the meeting titled **SIG-Network Meeting** on O3DE calendar. [Meeting agendas](https://github.com/o3de/sig-network/issues?q=is%3Aopen+is%3Aissue+label%3Amtg-agenda) are posted in advanced as GitHub issues and anyone can raise issues for discussion.
     * The SIG also meets once per week, on Thursdays, to review any new issues of interest to the SIG. Look for the meeting titled **SIG-Network Issue Triage** and see the [Triage Guide](TRIAGE_GUIDE.md) for more details of what happens at this meeting.
 * Subscribe to our [mailing list](https://lists.o3de.org/g/sig-network/join), which is occasionally used to convey information of interest to SIG members.
 
