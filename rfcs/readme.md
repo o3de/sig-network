@@ -14,9 +14,10 @@ RFC naming follows the pattern of:
 ## Recent Accepted RFCS
 
 ### 2022
-| RFC                                                                         | Month   | Summary                        |
-|-----------------------------------------------------------------------------|---------|--------------------------------|
-| [rfc-net-20220118-1-clientserver](rfc-net-20220118-1-clientserver.md)       | January | Client/Server build separation |
+| RFC                                                                   | Month   | Summary                                             |
+|-----------------------------------------------------------------------|---------|-----------------------------------------------------|
+| [rfc-net-20220118-1-clientserver](rfc-net-20220118-1-clientserver.md) | January | Client/Server build separation                      |
+| [rfc-net-20220719-1-awsgems](rfc-net-20220719-1-awsgems.md)           | July    | Migration of Amazon Gems from O3DE main repository. |
 
 
 ### 2021
