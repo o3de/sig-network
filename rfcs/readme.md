@@ -18,7 +18,7 @@ RFC naming follows the pattern of:
 |-----------------------------------------------------------------------|---------|-----------------------------------------------------|
 | [rfc-net-20220118-1-clientserver](rfc-net-20220118-1-clientserver.md) | January | Client/Server build separation                      |
 | [rfc-net-20220719-1-awsgems](rfc-net-20220719-1-awsgems.md)           | July    | Migration of Amazon Gems from O3DE main repository. |
-
+| [rfc-net-20220728-1-remotetools](rfc-net-20220728-1-remotetools.md)   | July    | Support for remote tools connections in O3DE        |
 
 ### 2021
 | RFC                                                                             | Month    | Summary                                                |
