@@ -1,18 +1,16 @@
-**Remote Tools Connection Gem**
-===============================
+# Remote Tools Connection Gem
 
 This gem enables connection to the Editor from the Script Canvas and LuaIDE tools.  Created in an extensible way, this may eventually allow connection from new tools, but the following are tests for the initial needs/functionality of the gem
 
-**Common Issues**
-=================
+## Common Issues
 
 *   Connection failure
 *   Connection drop
 *   Tool instability
 
-  
+## Workflows
 
-| Test                                                                      | Steps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | What to look for                                                                           |
+| Workflow                                                                  | Steps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | What to look for                                                                           |
 |---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | LuaIDE launched from Editor tools menu and connected to running Editor    | 1.  Remote Tools Connection gem is added and project built<br>2.  Launch the Editor<br>3.  Create or open an existing level<br>4.  Launch the LuaIDE from the tools menu (Tools > Lua Editor)<br>5.  Connect LuaIDE to Editor (Target > Editor)                                                                                                                                                                                                                                          | LuaIDE connects to the running Editor instance                                             |
 | LuaIDE launched standalone and connects to launched Editor                | 1.  Remote Tools Connection gem is added and project built<br>2.  Launch the Editor<br>3.  Create or open an existing level<br>4.  In the file explorer, navigate to and launch LuaIDE.exe from the project build directory (not the Engine)<br>5.  Connect LuaIDE to Editor (Target > Editor)                                                                                                                                                                                           | LuaIDE connects to the running Editor instance                                             |

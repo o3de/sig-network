@@ -1,28 +1,23 @@
-**Multiplayer** **Testing**
-===========================
+# Multiplayer Testing
 
 These tests are designed to cover the basic functionality related to running a level from a project that is intended to be multiplayer.
 
 General Documentation for this feature set: [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/)
 
-**Prerequisites**
-=================
+## Prerequisites
 
-*   MultiplayerSample project is acquired and built ( [https://github.com/o3de/o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample) )
+*   MultiplayerSample project is cloned and built ( [https://github.com/o3de/o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample) )
     *   If using this approach, the SampleBase level can be used for most tests
 *   Alternatively: A project has been created and built that includes the Multiplayer Gem and subsequent changes have been made to enable functionality ( [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/) )
-    *   If using this approach, a level should be created in the project that utilizes a spawner and network prefabs, as these will be easy identifiers for whether multiplayer connections are working as intended
+    *   If using this approach, a level should be created in the project that utilizes a player spawner and network prefabs, as these will be easy identifiers for whether multiplayer connections are working as intended
 
-**Common Issues**
-=================
+## Common Issues
 
-*   Most issues will be caught through log errors
-*   In addition, network prefabs can be a visual clue that something isn't working as expected
+*   Most issues will be caught through log errors, which can be seen in the Editor and Launcher consoles or in logs after running tests
+*   In addition, network prefabs can be a visual clue that something isn't working as expected (objects disappearing or not appearing in the first place)
+*   Processes that remain after closing applications - this can result in errors when trying to launch subsequent times
 
-**Workflows**
-=============
-
-  
+## Workflows
 
 | Workflow                        | Requests                                                                                                                                                                                                                                                                                                                                                    | What To Watch Out For                                                                                                                                                                   |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

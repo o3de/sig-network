@@ -1,10 +1,8 @@
-**Testing Multiplayer Launchers on Multiple Machines**
-======================================================
+# Testing Multiplayer Launchers on Multiple Machines
 
 This test is intended to verify successful connection between separate machines on the same network.  Ideally this is completed with a Linux machine as server and any number of windows machines as clients, but it can be completed with any combination.
 
-**Prerequisites**
-=================
+## Prerequisites
 
 **All machines used for this test should be on the same Network**
 
@@ -14,7 +12,25 @@ This test is intended to verify successful connection between separate machines 
 
 These steps only need to be done on the 1 machine that will be acting as the server/host for the test
 
-Windows:
+### Linux:
+
+1.  Open a terminal window
+2.  Enter “sudo ufw allow from any to any port 33450 proto udp”
+3.  Enter “sudo ufw status verbose”
+4.  Check that rule(s) exist for port 33450 with action “ALLOW IN”
+5.  Enter “ifconfig”
+6.  Note the inet ip address found in the first block of information, this address will be used by the clients to connect to the server machine
+
+Cleaning up after testing:
+
+1.  Open a terminal window
+2.  Enter “sudo ufw status numbered”
+3.  In the list, note the number for the first entry of your created 33450 rules
+4.  Enter “sudo ufw delete #” where ‘#’ is the number assigned to the rule
+5.  Press ‘y’ to confirm
+6.  Repeat steps 2-5 to remove the second entry (the number for the entry will have updated after deleting the first)
+
+### Windows:
 
 1.  Open Windows Defender Firewall
 2.  Click Advanced Settings
@@ -36,39 +52,19 @@ Cleaning up after testing:
 2.  Click Advanced Settings
 3.  Click Inbound Rules
 4.  Find the rule with the name that was given
-5.  Right Click the rule and Select Delete
+5.  Right-Click the rule and Select Delete
 6.  Confirm the dialog
 
-Linux:
-
-1.  Open a terminal window
-2.  Enter “sudo ufw allow from any to any port 33450 proto udp”
-3.  Enter “sudo ufw status verbose”
-4.  Check that rule(s) exist for port 33450 with action “ALLOW IN”
-5.  Enter “ifconfig”
-6.  Note the inet ip address found in the first block of information, this address will be used by the clients to connect to the server machine
-
-Cleaning up after testing:
-
-1.  Open a terminal window
-2.  Enter “sudo ufw status numbered”
-3.  In the list, note the number for the first entry of your created 33450 rules
-4.  Enter “sudo ufw delete #” where ‘#’ is the number assigned to the rule
-5.  Press ‘y’ to confirm
-6.  Repeat steps 2-5 to remove the second entry (the number for the entry will have updated after deleting the first)
-
-**What To Watch For**
-=====================
+## What To Watch For
 
 1.  Number of clients connected
 2.  Performance on clients (FPS, input response)
 3.  Logs from clients and server after testing
 
-**Testing**
-===========
+## Testing
 
 1.  Server machine has completed the above prerequisites
-2.  All machines have built MultiplayerSample project (MultiplayerSample.ServerLauncher at a minimum for the Server machine and MultiplayerSample.GameLauncher at a minimum for the rest) - [https://github.com/o3de/o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample)
+2.  All machines have built MultiplayerSample project(for minimum compiling - the server machine should at least have MultiplayerSample.ServerLauncher built and the clients should have MultiplayerSample.GameLauncher) - [https://github.com/o3de/o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample)
 3.  Server machine launches MutiplayerSample.ServerLauncher
     1.  If server.cfg is being used and is still the default entries of “host” and “LoadLevel Levels/SampleBase/SampleBase.spawnable” then nothing more should need to be done on this machine
     2.  If server.cfg is not being used, the user will need to press “~” to bring up the console after launching the launcher and enter “host” followed by “loadlevel samplebase”
