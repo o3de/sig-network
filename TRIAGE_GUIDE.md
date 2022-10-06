@@ -27,6 +27,7 @@ If time permits, prior to the start of meeting, the Triage Leader will create a 
 2. Main O3DE repository: https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+label%3Aneeds-triage+label%3Asig%2Fnetwork 
 3. Multiplayer Sample: https://github.com/o3de/o3de-multiplayersample/labels/needs-triage
 4. NetSoak Test: https://github.com/o3de/o3de-netsoaktest/issues
+5. [Multiplayer template](https://github.com/o3de/o3de-extras/tree/development/Templates/Multiplayer) issues in: https://github.com/o3de/o3de-extras/labels/sig%2Fnetwork
 
 ## Triage Leader Guide
 1. Join the SIG-Network discord voice channel

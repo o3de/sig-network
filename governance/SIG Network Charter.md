@@ -28,8 +28,10 @@ Responsibilities include:
 - Define and implement low level instrumentation APIs.
 - Items that are the core responsibilities of SIG.
 - Maintenance of network sample projects owned by SIG: [MultiplayerSample](https://github.com/o3de/o3de-multiplayersample), [NetSoakTest](https://github.com/o3de/o3de-netsoaktest).
+- Maintenance of network and multiplayer project templates owned by SIG: [Multiplayer project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Multiplayer).
 
-###Network:
+### Network
+
 - Design and maintain client and server protocol communication.
 - Define, publish, and maintain network protocol and data packet design model.
 - Responsible for network presence and state replication.
@@ -38,11 +40,13 @@ Responsibilities include:
 - Define and maintain specific implementation of multiplayer controller component.
 - Networking specific serialization (as part of the transport layer).
 
-###Cloud:
+### Cloud
+
 - Define, standardize, and maintain interfaces for features based on cloud services.
 - Define and maintain code to enable cloud data services communication.
 
-###Cross-cutting Processes
+### Cross-cutting Processes
+
 - Define client and server build targets for supported platforms, cross-cutting issue with `#sig-core` and `#sig-build`.
 - Define communication protocol and stacks.
 - Define and maintain entity replication network model.
@@ -56,6 +60,7 @@ Responsibilities include:
 - Items that span or require other SIGs or groups and how it relates to this SIG’s responsibilities.
 
 ## Out of Scope
+
 - Not responsible for sample projects unless projects are approved/accepted by SIG.
 - Not responsible for cloud or network services or interoperability with such services.
 - Not responsible for 3rd party gems and code for network services. Contributors submitting such integrations are responsible for support.
@@ -67,6 +72,7 @@ Responsibilities include:
 
 
 ## SIG Links and lists:
+
 - Slack/Discord: See https://o3de.org/community/ for Discord link, join the conversation in `#sig-network`.
 - Mailing list: https://lists.o3de.org/g/sig-network
 - SIG repro: https://github.com/o3de/sig-network
@@ -83,11 +89,15 @@ SIG-network adheres to the standards for roles and organization management as sp
 
 ## Individual Contributors
 
-Additional information not found in the <sig-governance> related to contributors.
+_Additional information not found in the [reviewer governence](https://github.com/o3de/community/blob/main/community-membership.md) related to contributors._
+
+* SIG/network reviewers are responsible for additional code owned by SIG which includes the MultiplayerSample project, NetSoakTest and Multiplayer Template.
 
 ## Maintainers
 
-Additional information not found in the <sig-governance> related to maintainers.
+_Any additional information not found in [maintainer governence](https://github.com/o3de/community/blob/main/community-membership.md) related to maintainers._
+
+* SIG/Network maintainers are responsible for additional code owned by SIG which includes the MultiplayerSample project, NetSoakTest and Multiplayer Template.
 
 ## Additional responsibilities of Chairs
 
@@ -102,8 +112,12 @@ Additional information not found in the <sig-governance> related to SIG Chairs.
 
 ## Subproject Creation
 
-Additional information not found in the <sig-governance> related to subproject creation.
+_Any additional information not found in [O3DE's general SIG governance](https://github.com/o3de/community/tree/main/sigs) related to subproject creation_.
+
+* None, at this time.
 
 ## Deviations from sig-governance
 
-Explicit Deviations from the <sig-governance>.
+_Any explicit deviations from the [O3DE's general SIG governance](https://github.com/o3de/community/tree/main/sigs)._
+
+* None, at this time.
