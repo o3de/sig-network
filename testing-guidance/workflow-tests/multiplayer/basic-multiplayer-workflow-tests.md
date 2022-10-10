@@ -7,7 +7,8 @@ General Documentation for this feature set: [https://docs.o3de.org/docs/user-gui
 ## Prerequisites
 
 *   MultiplayerSample project is cloned and built ( [https://github.com/o3de/o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample) )
-    *   If using this approach, the SampleBase level can be used for most tests
+    * If using this approach, the SampleBase level can be used for most tests.
+    * Ensure the ServerLauncher is built, as well as the Editor and ClientLauncher (if testing via the client launcher).
 *   Alternatively: A project has been created and built that includes the Multiplayer Gem and subsequent changes have been made to enable functionality ( [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/) )
     *   If using this approach, a new level should be created in the project, The level should utilize a player spawner and network prefabs, as these will act as identifiers for whether multiplayer connections are working as intended.
 
