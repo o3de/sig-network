@@ -1,6 +1,6 @@
 # Multiplayer Testing
 
-These tests are designed to cover the basic functionality related to running a level from a project that is intended to be multiplayer.
+These tests are designed to cover the basic functionality related to running a level from a Multiplayer project.
 
 General Documentation for this feature set: [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/)
 
