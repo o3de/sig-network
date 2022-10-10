@@ -9,7 +9,7 @@ General Documentation for this feature set: [https://docs.o3de.org/docs/user-gui
 *   MultiplayerSample project is cloned and built ( [https://github.com/o3de/o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample) )
     *   If using this approach, the SampleBase level can be used for most tests
 *   Alternatively: A project has been created and built that includes the Multiplayer Gem and subsequent changes have been made to enable functionality ( [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/) )
-    *   If using this approach, a level should be created in the project that utilizes a player spawner and network prefabs, as these will be easy identifiers for whether multiplayer connections are working as intended
+    *   If using this approach, a new level should be created in the project, The level should utilize a player spawner and network prefabs, as these will act as identifiers for whether multiplayer connections are working as intended.
 
 ## Common Issues
 
