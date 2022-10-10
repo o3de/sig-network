@@ -1,6 +1,6 @@
 # Testing Multiplayer Launchers on Multiple Machines
 
-This test is intended to verify successful connection between separate machines on the same network.  Ideally this is completed with a Linux machine as server and any number of windows machines as clients, but it can be completed with any combination.
+This test is intended to verify successful connection between separate machines on the same network.  Ideally this is completed with a Linux machine as server and any number of Windows machines as clients, but it can be completed with any combination.
 
 ## Prerequisites
 
