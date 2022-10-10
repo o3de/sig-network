@@ -16,7 +16,9 @@ General Documentation for this feature set: [https://docs.o3de.org/docs/user-gui
 
 *   Most issues will be caught through log errors, which can be seen in the Editor and Launcher consoles or in logs after running tests
 *   In addition, network prefabs can be a visual clue that something isn't working as expected (objects disappearing or not appearing in the first place)
-*   Processes that remain after closing applications - this can result in errors when trying to launch subsequent times
+* Issues connecting to the server are caused either by:
+       1. Processes that remain after closing applications - this can result in errors when trying to launch subsequent times.
+       2. The ServerLauncher has not been built or has not been built against the same commit as Editor/ClientLauncher.
 
 ## Workflows
 
