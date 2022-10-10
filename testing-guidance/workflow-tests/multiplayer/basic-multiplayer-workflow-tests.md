@@ -2,7 +2,7 @@
 
 These tests are designed to cover the basic functionality related to running a level from a Multiplayer project.
 
-General Documentation for this feature set: [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/)
+General Documentation for this feature set: [https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/).
 
 ## Prerequisites
 
