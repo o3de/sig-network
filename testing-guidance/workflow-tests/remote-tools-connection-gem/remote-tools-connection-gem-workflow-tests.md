@@ -1,6 +1,6 @@
 # Remote Tools Connection Gem
 
-This gem enables connection to the Editor from the Script Canvas and LuaIDE tools.  Created in an extensible way, this may eventually allow connection from new tools, but the following are tests for the initial needs/functionality of the gem
+This gem enables connection to the Editor to other remote tools. Currently the gem is only used to connect LuaIDE tools.  As the Gem is created in an extensible way, O3DE may support connections from other tools, but the following are tests for the initial needs/functionality of the gem.
 
 ## Common Issues
 
