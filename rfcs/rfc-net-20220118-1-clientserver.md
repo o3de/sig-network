@@ -1,6 +1,8 @@
 # rfc-net-20220118-1
 * https://github.com/o3de/sig-network/issues/32
 
+> This RFC is now replaced/amended by - [rfc-net-20221020-1-clientserver](./rfc-net-20221020-1-clientserver.md)
+
 # RFC Feature: Client and server build target separation
 ### Summary:
 For some O3DE applications, like multiplayer and live service games, server code cannot be shipped to the clients. Doing so creates incremental security and cheating risks. Servers that include client code and resources can also bring unnecessary dependencies which causes long build and relocation times. This RFC proposes a hard client and server split by separating the client and server into different build targets when required.
@@ -94,8 +96,8 @@ Macros would be enforced at the [auto-generated component](https://o3de.org/docs
 Add the same CMake flag/compile definitions as the proposed solution and also create the following three static libraries for the client hosted and dedicated server mode:
 
 * MultiplayerSample.Unified.static: Unified static library for the client target that can also behave as a server.
-* MultiplayerSample.Server.static: Static library for the dedicated server target which doesn’t include any client code.
-* MultiplayerSample.Client.static: Static library for the client target which doesn’t include any server code.
+* MultiplayerSample.Server.static: Static library for the dedicated server target which doesn't include any client code.
+* MultiplayerSample.Client.static: Static library for the client target which doesn't include any server code.
 
 Project/Gem CMake configuration will look like below:
 

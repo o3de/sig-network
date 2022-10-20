@@ -3,9 +3,10 @@
 This repository holds materials for the Open 3D Engine Foundation Special Interest Group for Networking (SIG-Network).
 
 ## Description of SIG Network
+
 We manage communication components for O3DE, including foundational networking layers, transport, multiplayer, client/server interactions and Cloud connectivity pieces of O3DE. See the [SIG's charter](governance/SIG%20Network%20Charter.md) for full details.
 
-## What the SIG does:
+## What does the SIG do?
 
 * Reviews and contribute to O3DE's technology roadmap specifically around Networking features. 
 * Reviews network related issues, RFCs and PRs. 
@@ -23,11 +24,13 @@ We manage communication components for O3DE, including foundational networking l
 * Subscribe to our [mailing list](https://lists.o3de.org/g/sig-network/join), which is occasionally used to convey information of interest to SIG members.
 
 ### Who can attend or participate?
+
 O3DE cannot work without the help and input from as many of its community members as possible. You do not need anyone’s permission to get involved and contribute to the project. The #sig-network channel on O3DE Discord is a great place to begin getting involved. Many of our community members regularly share ideas, updates, and resources there. You can also find a number of topics under the GitHub Discussions area which need your input.
 
 ## Helpful information
 
 * SIG Chair: Pip Potter [Amazon, [@lmbr-pip](https://github.com/lmbr-pip)], Co-chair: Karl Berg [Amazon, [@kberg-amzn](https://github.com/kberg-amzn)]
+* Accepted [RFCs](./rfcs/README.md)
 * [SIG-Network Charter](governance/SIG%20Network%20Charter.md)
 * [Upcoming meeting agendas](https://github.com/o3de/sig-network/issues?q=is%3Aopen+is%3Aissue+label%3Amtg-agenda)
 * [Archived meeting notes](meetings/readme.md)
