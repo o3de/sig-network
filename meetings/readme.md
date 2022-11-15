@@ -38,16 +38,16 @@ Below is a list of all prior completed meetings and related resources.
 | 0019 | 2022-07-19 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/66) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20220719.md) | n/a       |
 
 ### 2021
-| No   | Date       | Time      | Agenda                                                | Media | Notes                                                                                        | Resources |
-|------|------------|-----------|-------------------------------------------------------|-------|----------------------------------------------------------------------------------------------|-----------|
-| 0001 | 2021-06-24 | 00:00 UTC | n/a                                                   | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20210624.md) | n/a       |
-| 0002 | 2021-09-14 | 00:00 UTC | [Link](https://github.com/o3de/sig-network/issues/4)  | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20210914.md) | n/a       |
-| 0003 | 2021-10-05 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/12) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211005.md) | n/a       |
-| 0004 | 2021-10-26 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/16) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211026.md) | n/a       |
-| 0005 | 2021-11-09 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/16) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211109.md) | n/a       |
-| 0006 | 2021-11-23 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/22) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211123.md) | n/a       |
-| 0007 | 2021-12-07 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/28) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211207.md) | n/a       |
-| 0008 | 2021-12-21 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/31) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20211221.md) | n/a       |
+| No   | Date       | Time      | Agenda                                                | Media | Notes                                                                                             | Resources |
+|------|------------|-----------|-------------------------------------------------------|-------|---------------------------------------------------------------------------------------------------|-----------|
+| 0001 | 2021-06-24 | 00:00 UTC | n/a                                                   | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20210624.md) | n/a       |
+| 0002 | 2021-09-14 | 00:00 UTC | [Link](https://github.com/o3de/sig-network/issues/4)  | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20210914.md) | n/a       |
+| 0003 | 2021-10-05 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/12) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20211005.md) | n/a       |
+| 0004 | 2021-10-26 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/16) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20211026.md) | n/a       |
+| 0005 | 2021-11-09 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/16) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20211109.md) | n/a       |
+| 0006 | 2021-11-23 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/22) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20211123.md) | n/a       |
+| 0007 | 2021-12-07 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/28) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20211207.md) | n/a       |
+| 0008 | 2021-12-21 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/31) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/2021/sig-meeting-20211221.md) | n/a       |
 
 # General Resources
 
