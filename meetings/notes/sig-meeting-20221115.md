@@ -1,6 +1,6 @@
 ## Meeting Details
 
-- **Date/Time:** [November 15th, 2022 @ XX:XXpm UTC / XX:XXpm ET](https://lists.o3de.org/g/o3de-calendar/viewevent?repeatid=39350&eventid=1557573&calstart=2022-11-15)
+- **Date/Time:** [November 15th, 2022 @ 17:00pm UTC / 11:00am ET / 9:00am PT](https://lists.o3de.org/g/o3de-calendar/viewevent?repeatid=39350&eventid=1557573&calstart=2022-11-15)
 - **Location:** [Discord SIG-Network Voice Room](https://discord.gg/62nq7HP5mP)
 - **Moderator:** Pip Potter (lmbr-pip)
 - **Note Taker** Pip Potter (lmbr-pip)
@@ -13,11 +13,11 @@
 AWS is looking to contribute a [major update](https://github.com/o3de/o3de/issues/13198) to the 3rd person Multiplayer Sample
 
 [O3DCon 2022](https://events.linuxfoundation.org/o3dcon/) talks now on [YouTube](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ). Of interest to SIG:
-    * [Building Multiplayer Content for Large Worlds](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ)
-    * [Scale Testing Multiplayer Games on AWS](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ)
-    * [Keynote: Supercharging Gameworld Performance Using the Cloud](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ)
-    * [Keynote: O3DE on AWS The Future of 3D in the Cloud ](https://www.youtube.com/watch?v=jg_BJVNc5Xc&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=26)
-    * [Workshop: Building a Networked Game from Scratch: Multiplayer Drag Racing](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ)
+* [Building Multiplayer Content for Large Worlds](https://www.youtube.com/watch?v=mY8SgHPDVHA&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=7)
+* [Scale Testing Multiplayer Games on AWS](https://www.youtube.com/watch?v=QayMbJxOzJ0&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=17)
+* [Keynote: Supercharging Gameworld Performance Using the Cloud](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=20)
+* [Keynote: O3DE on AWS The Future of 3D in the Cloud ](https://www.youtube.com/watch?v=jg_BJVNc5Xc&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=26)
+* [Workshop: Building a Networked Game from Scratch: Multiplayer Drag Racing](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=29)
 
 ### Networking
 * ClientServer mode in the Editor - simplifies Ctrl+G 
