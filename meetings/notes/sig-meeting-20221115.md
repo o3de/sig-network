@@ -15,9 +15,9 @@ AWS is looking to contribute a [major update](https://github.com/o3de/o3de/issue
 [O3DCon 2022](https://events.linuxfoundation.org/o3dcon/) talks now on [YouTube](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ). Of interest to SIG:
 * [Building Multiplayer Content for Large Worlds](https://www.youtube.com/watch?v=mY8SgHPDVHA&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=7)
 * [Scale Testing Multiplayer Games on AWS](https://www.youtube.com/watch?v=QayMbJxOzJ0&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=17)
-* [Keynote: Supercharging Gameworld Performance Using the Cloud](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=20)
+* [Keynote: Supercharging Gameworld Performance Using the Cloud](https://www.youtube.com/watch?v=DH1ZP8pjmOc&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=20)
 * [Keynote: O3DE on AWS The Future of 3D in the Cloud ](https://www.youtube.com/watch?v=jg_BJVNc5Xc&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=26)
-* [Workshop: Building a Networked Game from Scratch: Multiplayer Drag Racing](https://www.youtube.com/playlist?list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=29)
+* [Workshop: Building a Networked Game from Scratch: Multiplayer Drag Racing](https://www.youtube.com/watch?v=4f4olmUo44k&list=PLCQwFpnHSZQgzCpMmbxruFkWr3d73ZfEJ&index=29)
 
 ### Networking
 * ClientServer mode in the Editor - simplifies Ctrl+G 
