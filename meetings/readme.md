@@ -18,7 +18,13 @@ The agenda for each meeting is created before the meeting as [an issue on GitHub
 
 Below is a list of all prior completed meetings and related resources.
 
-## Documentation Special Interest Group
+## Meeting Nots
+
+### 2023
+| No   | Date       | Time      | Agenda                                                | Media | Notes                                                                                        | Resources |
+|------|------------|-----------|-------------------------------------------------------|-------|----------------------------------------------------------------------------------------------|-----------|
+| 0022 | 2023-01-17 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/88) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20230117.md) | n/a       |
+
 
 ### 2022
 | No   | Date       | Time      | Agenda                                                | Media | Notes                                                                                        | Resources |
