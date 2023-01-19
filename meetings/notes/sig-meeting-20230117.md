@@ -55,7 +55,7 @@ Discussed https://github.com/ValveSoftware/GameNetworkingSockets
 ### SIG Roadmap - In Planning
 * Multiprocess / build size
 * Asset Packaging for server
-* AWS Gems relocation is still planned, waiting for guidance of split of gems to o3de-extras.
+* AWS Gems relocation is still planned, need to incorporate learnings from o3de-extras split into gem migration plan (https://github.com/o3de/sig-network/blob/main/rfcs/rfc-net-20220719-1-awsgems.md)
 * AWS C++ SDK Refresh
    
 ## Open Discussion Items
