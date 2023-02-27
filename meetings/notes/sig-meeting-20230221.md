@@ -30,6 +30,7 @@
 * Added new player id debug component
 
 ### Cloud Services
+* None
 
 ## Meeting Agenda
 Discussed MPS play test scaler: https://github.com/aws-samples/scaletest-o3de-multiplayer-sample
@@ -44,6 +45,6 @@ Discussed MPS play test scaler: https://github.com/aws-samples/scaletest-o3de-mu
 None
 
 ## Action Items
-Carried from [previous meeting](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20220719.md):
+Carried from [previous meeting](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20230117.md):
 * _TODO_: Need to decide on SIG/network's responsibility towards cloud service gems once they migrate from O3DE/O3DE (may require charter update).
 * _COMPLETED_: Find volunteer to run SIG/Network Chair elections
