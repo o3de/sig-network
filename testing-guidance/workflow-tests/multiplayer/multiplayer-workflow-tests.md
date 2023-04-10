@@ -5,7 +5,7 @@ These tests are designed to cover the basic functionality related to running a l
 ## General Docs 
 
 * [O3DE Multiplayer](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/)
-* [O3DE Mutlipler Gem](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/)
+* [O3DE Multiplayer Gem](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/)
 
 ## Common Issues
 
@@ -17,7 +17,7 @@ These tests are designed to cover the basic functionality related to running a l
 
 ## Prerequisites
 
-* MultiplayerSample project is cloned and built [o3de-multiplayersample](https://github.com/o3de/o3de-multiplayersample)
+* MultiplayerSample project is cloned and built [O3DE MultiplayerSample](https://github.com/o3de/o3de-multiplayersample)
   * If using this approach, the SampleBase level can be used for most tests.
   * Ensure the ServerLauncher is built, as well as the Editor and ClientLauncher (if testing via the client launcher).
 * Alternatively: A project has been created and built that includes the Multiplayer Gem and subsequent changes have been made to enable functionality ([O3DE Multiplayer Gem](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/)).
