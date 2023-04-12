@@ -298,6 +298,7 @@ NOTE: This area is a work in progress and needs formal instructions for generati
 
 **Docs**
 
+* Create MultiPlayerSample PAK Builds (TBD) ([o3de/sig-network#102](https://github.com/o3de/sig-network/issues/102))
 * [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
 
 **Prerequisites**
