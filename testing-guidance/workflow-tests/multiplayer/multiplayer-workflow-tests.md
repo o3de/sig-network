@@ -159,6 +159,10 @@ These tests are designed to cover the basic functionality related to running a l
 
 ### Area: Debug Desync
 
+**Docs**
+
+* [O3DE Networking Debugging Desyncs](https://www.o3de.org/docs/user-guide/networking/multiplayer/debug-desync/)
+
 **Prerequisites**
 
 * These scenarios all require a server and at least one client to be set up and connected utilizing the **SampleBase** level.
@@ -185,6 +189,10 @@ These tests are designed to cover the basic functionality related to running a l
 
 ### Area: Player Spawners
 
+**Docs**
+
+* [O3DE Networking Player Spawning](https://www.o3de.org/docs/user-guide/networking/multiplayer/spawning/)
+
 **Prerequisites**
 
 * These scenarios all require a server and at least one client to be set up and connected utilizing the **SampleBase** level.
@@ -207,6 +215,7 @@ These tests are designed to cover the basic functionality related to running a l
 
 **Docs**
 
+* [O3DE Multiplayer Testing in Editor](https://www.o3de.org/docs/user-guide/networking/multiplayer/test-in-editor/)
 * [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
 
 **Prerequisites**
@@ -229,6 +238,7 @@ These tests are designed to cover the basic functionality related to running a l
 
 **Docs**
 
+* [O3DE Networking Running Multiple Multiplayer Projects](https://www.o3de.org/docs/user-guide/networking/multiplayer/running/)
 * [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
 
 **Prerequisites**
@@ -267,4 +277,38 @@ NOTE: This area is a work in progress and needs formal instructions for generati
 | Workflow                                                            | Requests                                                                       | Things to Watch For                                                          |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)  |
+---
+
+### Area: Network Versioning
+
+**Docs**
+
+* [O3DE Version Mismatch (Dev Doc)](https://development--o3deorg.netlify.app/docs/user-guide/networking/multiplayer/versionmismatch/) (o3de/sig-network#101)
+* [O3DE Multiplayer Template](https://github.com/o3de/o3de-extras/tree/development/Templates/Multiplayer)
+
+**Prerequisites**
+
+* **MultiplayerSample** project has both the **Server Launcher** & **Game Client** built.
+  * Alternatively: A new project is created using the **Multiplayer Template** and the project is built, including the server and game launchers.
+
+**Server Version Mismatch CVARs**
+
+* Server: `sv_versionMismatch_autoDisconnect` (Default = `True`)
+  * Determines if a mismatched connection will automatically terminate. It’s recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior.
+* Server: `sv_versionMismatch_sendAllComponentHashesToClient` (Default = `True`)
+  * Determines if the server will send all its individual multiplayer component version information to the client when there’s a mismatch. Upon receiving the information, the client will print which components are different to the console. It’s recommended to set to false for release builds. This is to prevent clients having knowledge to any multiplayer component information that should be kept private (component names and version hashes).
+* Client: `bg_viewportConnectionStatus` (Default = `True`)
+  * If true, the viewport connection status system will display on-screen warnings whenever important multiplayer events occur; this includes version mismatches.
+
+**Product:** A Server/Client that are either version matched or version mismatched that behave as expected.
+
+**Suggested Timebox:** 90 minutes per platform.
+
+| Workflow                                  | Requests                                                                                                                                                                                                                                                                      | Things to Watch For                                                                                                                                                                                                                                                                                                                                                                          |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Server/Client - No Mismatch**           | <ol><li>Without making any changes to the project, launch the server launcher and connect to it with a local client.</li></ol>                                                                                                                                                | <ul><li>No connection issues occur.</li><li>No notification about mismatch with `bg_viewportConnectionStatus` set to `True` or `False`.</li></ul>                                                                                                                                                                                                                                            |
+| **Server/Client - Older Server Mismatch** | <ol><li>Make a change to one of the **Auto Components** used in the project.</li><li>Rebuild the **Game Launcher Client** WITHOUT rebuilding the **Server Client**.</li><li>Launch the **Server Client** and connect to it with a local **Game Launcher Client**.</li></ol>   | <ul><li>User IS notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `True`.</li><li>User IS NOT notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `False`.</li><li>Client is disconnected.</li></ul>                                                                                                           |
+| **Server/Client - Older Client Mismatch** | <ol><li>Make a change to one of the **Auto Components** used in the project.</li><li>Rebuild the **Server Launcher** WITHOUT rebuilding the **Game Launcher Client**.</li><li>Launch the **Server Client** and connect to it with a local **Game Launcher Client**.</li></ol> | <ul><li>User IS notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `True`.</li><li>User IS NOT notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `False`.</li><li>Client is disconnected.</li></ul>                                                                                                           |
+| **Allow Players To Connect On Mismatch**  | <ol><li>Launch the **Server Client** and disable `sv_versionMismatch_autoDisconnect` from the console.</li><li>Launch a local **Game Launcher Client** and connect to the **Server Client**.</li></ol>                                                                        | <ul><li>In the above **Server/Client Mismatch** workflow scenarios the client will connect to the session and will not be disconnected.</li><li>User IS notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `True`.</li><li>User IS NOT notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `False`.</li></ul>   |
+| **Verbose Mismatch Messaging**            | <ol><li>Launch the **Server Client** and disable `sv_versionMismatch_sendAllComponentHashesToClient` from the console.</li><li>Launch a local **Game Launcher Client** and connect to the **Server Client**.</li></ol>                                                        | <ul><li>In the above **Server/Client Mismatch** workflow scenarios the client will receive a less verbose notification, that doesn't include specific components, with `bg_viewportConnectionStatus` set to `True`.</li></ul>                                                                                                                                                                |
 ---
