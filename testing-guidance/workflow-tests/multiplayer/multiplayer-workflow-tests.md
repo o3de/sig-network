@@ -258,27 +258,6 @@ These tests are designed to cover the basic functionality related to running a l
 | **Max + 1 Game Clients connect and play through until end of the round** | Players attempt to connect and then play through the session until the end of the round.   | <br/>[NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations) <br/><br/>**Max +1** <ul><li>Server remains stable for already connected players</li><li>Last player connect is unable to connect and is presented with a meaningful error.</li></ul> |
 ---
 
-### Area: MultiplayerSample PAK Builds (WIP)
-
-NOTE: This area is a work in progress and needs formal instructions for generating PAK builds.
-
-**Docs**
-
-* [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
-
-**Prerequisites**
-
-* **MultiplayerSample** project has both the **Server Launcher** & **Game Client** built.
-* Create a PAK asset bundle to distribute the game and server following the instructions in **<Instructions Pending>**.
-* **Server Launcher** is configured and launched in **Headless Mode** with **NewStarBase** level.
-
-**Suggested Timebox:** 90 minutes per platform.
-
-| Workflow                                                            | Requests                                                                       | Things to Watch For                                                          |
-|---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)  |
----
-
 ### Area: Network Versioning
 
 **Docs**
@@ -311,4 +290,25 @@ NOTE: This area is a work in progress and needs formal instructions for generati
 | **Server/Client - Older Client Mismatch** | <ol><li>Make a change to one of the **Auto Components** used in the project.</li><li>Rebuild the **Server Launcher** WITHOUT rebuilding the **Game Launcher Client**.</li><li>Launch the **Server Client** and connect to it with a local **Game Launcher Client**.</li></ol> | <ul><li>User IS notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `True`.</li><li>User IS NOT notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `False`.</li><li>Client is disconnected.</li></ul>                                                                                                           |
 | **Allow Players To Connect On Mismatch**  | <ol><li>Launch the **Server Client** and disable `sv_versionMismatch_autoDisconnect` from the console.</li><li>Launch a local **Game Launcher Client** and connect to the **Server Client**.</li></ol>                                                                        | <ul><li>In the above **Server/Client Mismatch** workflow scenarios the client will connect to the session and will not be disconnected.</li><li>User IS notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `True`.</li><li>User IS NOT notified in console/log about the mismatch when with `bg_viewportConnectionStatus` set to `False`.</li></ul>   |
 | **Verbose Mismatch Messaging**            | <ol><li>Launch the **Server Client** and disable `sv_versionMismatch_sendAllComponentHashesToClient` from the console.</li><li>Launch a local **Game Launcher Client** and connect to the **Server Client**.</li></ol>                                                        | <ul><li>In the above **Server/Client Mismatch** workflow scenarios the client will receive a less verbose notification, that doesn't include specific components, with `bg_viewportConnectionStatus` set to `True`.</li></ul>                                                                                                                                                                |
+---
+
+### Area: MultiplayerSample PAK Builds (WIP)
+
+NOTE: This area is a work in progress and needs formal instructions for generating PAK builds.
+
+**Docs**
+
+* [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
+
+**Prerequisites**
+
+* **MultiplayerSample** project has both the **Server Launcher** & **Game Client** built.
+* Create a PAK asset bundle to distribute the game and server following the instructions in **<Instructions Pending>**.
+* **Server Launcher** is configured and launched in **Headless Mode** with **NewStarBase** level.
+
+**Suggested Timebox:** 90 minutes per platform.
+
+| Workflow                                                            | Requests                                                                       | Things to Watch For                                                          |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)  |
 ---
