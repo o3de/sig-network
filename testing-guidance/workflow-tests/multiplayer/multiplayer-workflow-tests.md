@@ -256,6 +256,8 @@ NOTE: This area is a work in progress and needs formal instructions for generati
 * Create a PAK asset bundle to distribute the game and server following the instructions in **<Instructions Pending>**.
 * **Server Launcher** is configured and launched in **Headless Mode** with **NewStarBase** level.
 
+**Suggested Timebox:** 90 minutes per platform.
+
 | Workflow                                                            | Requests                                                                       | Things to Watch For                                                          |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
