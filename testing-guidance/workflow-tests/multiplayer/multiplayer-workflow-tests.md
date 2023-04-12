@@ -6,6 +6,9 @@ These tests are designed to cover the basic functionality related to running a l
 
 * [O3DE Multiplayer](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/)
 * [O3DE Multiplayer Gem](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/)
+* [O3DE Multiplayer Sample Windows Download & Install](https://github.com/o3de/o3de-multiplayersample/#download-and-install)
+* [O3DE Multiplayer Sample Linux Download & Install](https://github.com/o3de/o3de-multiplayersample/blob/development/README_LINUX.md#download-and-install)
+* [O3DE Server & Client Setup](https://github.com/o3de/o3de-multiplayersample/#step-4-setup-client-and-server)
 
 ## Common Issues
 
@@ -34,7 +37,7 @@ These tests are designed to cover the basic functionality related to running a l
 * Windows
 * Linux
 
-## MultiplayerSample Gameplay Validations
+## NewStarBase Gameplay Validations
 
 <details> 
 
@@ -227,7 +230,30 @@ These tests are designed to cover the basic functionality related to running a l
 
 **Suggested Timebox:** 60 minutes per platform.
 
-| Workflow                                                            | Requests                                                                       | Things to Watch For                                                                |
-|---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| **2 Game Clients connect and play through until end of the round**  | <ul><li>Players play through the session until the end of the round.</li></ul> | [MultiplayerSample Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
-| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [MultiplayerSample Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
+| Workflow                                                                 | Requests                                                                       | Things to Watch For                                                                                                                                                                                                                                               |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **2 Game Clients connect and play through until end of the round**       | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)                                                                                                                                                                                       |
+| **3+ Game Clients connect and play through until end of the round**      | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)                                                                                                                                                                                       |
+| **Max Game Clients connect and play through until end of the round**     | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)                                                                                                                                                                                       |
+| **Max + 1 Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations) <br/><br/>**Max +1** <ul><li>Server remains stable for already connected players</li><li>Last player connect is unable to connect and is presented with a meaningful error.</li></ul> |
+
+
+
+### Area: MultiplayerSample PAK Builds (WIP)
+
+NOTE: This area is a work in progress and needs formal instructions for generating PAK builds.
+
+**Docs**
+
+* [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
+
+**Prerequisites**
+
+* **MultiplayerSample** project has both the **Server Launcher** & **Game Client** built.
+* Create a PAK asset bundle to distribute the game and server following the instructions in **<Instructions Pending>**.
+* **Server Launcher** is configured and launched in **Headless Mode** with **NewStarBase** level.
+
+
+| Workflow                                                            | Requests                                                                       | Things to Watch For                                                          |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
