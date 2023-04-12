@@ -4,6 +4,8 @@ These tests are designed to cover the basic functionality related to running a l
 
 ## General Docs 
 
+* [O3DE Networking](https://www.o3de.org/docs/user-guide/networking/)
+* [O3DE Networking & Multiplayer Settings](https://www.o3de.org/docs/user-guide/networking/settings/)
 * [O3DE Multiplayer](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/)
 * [O3DE Multiplayer Gem](https://docs.o3de.org/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/configuration/)
 * [O3DE Multiplayer Sample Windows Download & Install](https://github.com/o3de/o3de-multiplayersample/#download-and-install)
@@ -136,6 +138,10 @@ These tests are designed to cover the basic functionality related to running a l
 
 ### Area: Client-Server Communications
 
+**Docs**
+
+* [O3DE Networking Auto Components](https://www.o3de.org/docs/user-guide/networking/multiplayer/autocomponents/)
+
 **Prerequisites**
 
 * Ensure the **ServerLauncher** is built, as well as the **Editor** and **ClientLauncher** (if testing via the client launcher).
@@ -156,7 +162,7 @@ These tests are designed to cover the basic functionality related to running a l
 **Prerequisites**
 
 * These scenarios all require a server and at least one client to be set up and connected utilizing the **SampleBase** level.
-  * See [Multi-Machine MultiplayerSample Workflows](../multi-machine-multiplayer-workflow-tests.md) for reference. 
+  * See [Multi-Machine MultiplayerSample Workflows](multi-machine-multiplayer-workflow-tests.md) for reference. 
   * This can also be done with a server and client on the same machine for easier set up. 
 * With reduced situations causing desync, it may be required to use a tool similar to **[Clumsy](http://jagt.github.io/clumsy/)** (or your preferred tool) to create artificial network issues.
 
@@ -182,7 +188,7 @@ These tests are designed to cover the basic functionality related to running a l
 **Prerequisites**
 
 * These scenarios all require a server and at least one client to be set up and connected utilizing the **SampleBase** level.
-  * See [Multi-Machine MultiplayerSample Workflows](../multi-machine-multiplayer-workflow-tests.md) for reference. 
+  * See [Multi-Machine MultiplayerSample Workflows](multi-machine-multiplayer-workflow-tests.md) for reference. 
   * This can also be done with a server and client on the same machine for easier set up. 
 
 **Product:** A Multiplayer Game Session that spawns players in across player spawners.
@@ -236,10 +242,10 @@ These tests are designed to cover the basic functionality related to running a l
 
 | Workflow                                                                 | Requests                                                                                   | Things to Watch For                                                                                                                                                                                                                                               |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **2 Game Clients connect and play through until end of the round**       | Players attempt to connect and then play through the session until the end of the round.   | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)                                                                                                                                                                                       |
-| **3+ Game Clients connect and play through until end of the round**      | Players attempt to connect and then play through the session until the end of the round.   | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)                                                                                                                                                                                       |
-| **Max Game Clients connect and play through until end of the round**     | Players attempt to connect and then play through the session until the end of the round.   | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)                                                                                                                                                                                       |
-| **Max + 1 Game Clients connect and play through until end of the round** | Players attempt to connect and then play through the session until the end of the round.   | <br/>[NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations) <br/><br/>**Max +1** <ul><li>Server remains stable for already connected players</li><li>Last player connect is unable to connect and is presented with a meaningful error.</li></ul> |
+| **2 Game Clients connect and play through until end of the round**       | Players attempt to connect and then play through the session until the end of the round.   | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)                                                                                                                                                                                       |
+| **3+ Game Clients connect and play through until end of the round**      | Players attempt to connect and then play through the session until the end of the round.   | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)                                                                                                                                                                                       |
+| **Max Game Clients connect and play through until end of the round**     | Players attempt to connect and then play through the session until the end of the round.   | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)                                                                                                                                                                                       |
+| **Max + 1 Game Clients connect and play through until end of the round** | Players attempt to connect and then play through the session until the end of the round.   | <br/>[NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations) <br/><br/>**Max +1** <ul><li>Server remains stable for already connected players</li><li>Last player connect is unable to connect and is presented with a meaningful error.</li></ul> |
 ---
 
 ### Area: MultiplayerSample PAK Builds (WIP)
@@ -260,5 +266,5 @@ NOTE: This area is a work in progress and needs formal instructions for generati
 
 | Workflow                                                            | Requests                                                                       | Things to Watch For                                                          |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
+| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [NewStarBase Gameplay Validations](#NewStarBase-Gameplay-Validations)  |
 ---
