@@ -34,6 +34,73 @@ These tests are designed to cover the basic functionality related to running a l
 * Windows
 * Linux
 
+## MultiplayerSample Gameplay Validations
+
+<details> 
+
+**<summary>Player Connection</summary>** 
+
+* Players are able to connect to the server without issue.
+* Game is able to start. 
+
+</details> 
+
+<details> 
+
+**<summary>Player Movement & Combat</summary>**
+
+* Moving, Jumping, and basic controls work as expected.
+* Aiming and Primary Weapon Fire work as expected.
+* Pistol firing VFX should be visible.
+
+</details> 
+
+
+<details>
+
+**<summary>UI/UX</summary>** 
+
+* Connected player count should display the correct number of players.
+* Round counter should start at the end of the round.
+* Round counter should end at round end.
+* Scoreboard (opened with `Tab`) should accurately display scores. 
+  * Increase on gem pick up.
+  * Decrease on player death by `20%`.
+* `Esc` Menu - Continue and Quit should work as expected. 
+
+</details> 
+
+<details> 
+
+**<summary>Basic Gameplay</summary>** 
+
+* Collected gems should disappear from the field.
+* Jumping out of bounds should have the player respawn.
+* Start of Round should respawn players.
+
+</details> 
+
+<details> 
+
+**<summary>Victory/Defeat</summary>** 
+
+* Player with the most gems wins the round.
+* Winning player can tell they have won.
+* Losing players can tell they did not win. 
+
+</details> 
+
+<details> 
+
+**<summary>Stability</summary>** 
+
+* No stability issues are present when playing
+* Ensure no errors are present in the server or game logs. 
+  * `user/logs/server.log`.
+  * `user/logs/game.log`.
+
+</details> 
+
 ## Workflows
 
 ### Area: Client-Server Building
@@ -123,7 +190,7 @@ These tests are designed to cover the basic functionality related to running a l
 | **Snap to Ground**                                                                       | <ol><li>Open the **O3DE Editor**.</li><li>Open the **SampleBase** level.</li><li>Select all **Spawner** entities and toggle **Snap to Ground** off.</li><li>Raise all the entities by adjusting the **Z Translate** value.</li><li>Save and close the **O3DE Editor**.</li><li>Launch and setup the **Server Launcher** before connecting multiple **Game Launcher Clients** to the server.</li></ol> | <ul><li>Players should spawn at the new Z height as they connect.</li></ul>                                                                                                                                                                                                       |
 ---
 
-### Area: Play MultiplayerSample in Editor
+### Area: Play NewStarBase in Editor
 
 **Docs**
 
@@ -144,3 +211,23 @@ These tests are designed to cover the basic functionality related to running a l
 | **Basic Gameplay**                          | <ol><li>Collect Gems.</li><li>Go **Out of Bounds (OOB)**.</li><li>Play through until a new **Start of Round**.</li></ol>                                                                                      | <ul><li>Collected gems should disappear from the field.</li><li>Jumping out of bounds should have the player respawn.</li><li>Start of Round should respawn players.</li></ul>                                                                    |
 | **Basic UI/UX**                             | <ol><li>Round Counter.</li><li>Player Health/Shields.</li><li>Scoreboard (Press `Tab`).</li><li>Scoreboard (End of Round).</li><li>`Esc` Menu</li></ol>                                                       | <ul><li>Round counter should start at the end of the round.</li><li>Round counter should end at round end.</li><li>Scoreboard should accurately display scores.</li><li>`Esc` Menu - **Continue** and **Quit** should work as expected.</li></ul> |
 ---
+
+### Area: Play NewStarBase in Standalone Launchers
+
+**Docs**
+
+* [O3DE MultiplayerSample Player Control Guide](https://github.com/o3de/o3de-multiplayersample/#player-controls)
+
+**Prerequisites**
+
+* **MultiplayerSample** project has both the **Server Launcher** & **Game Client** built.
+* **Server Launcher** is configured and launched in **Headless Mode** with **NewStarBase** level.
+
+**Product:** A built **Server Launcher** & **Game Client** that is able to connect to the server and interact with other game clients.
+
+**Suggested Timebox:** 60 minutes per platform.
+
+| Workflow                                                            | Requests                                                                       | Things to Watch For                                                                |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **2 Game Clients connect and play through until end of the round**  | <ul><li>Players play through the session until the end of the round.</li></ul> | [MultiplayerSample Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
+| **3+ Game Clients connect and play through until end of the round** | <ul><li>Players play through the session until the end of the round.</li></ul> | [MultiplayerSample Gameplay Validations](#MultiplayerSample-Gameplay-Validations)  |
