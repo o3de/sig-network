@@ -25,7 +25,7 @@ Below is a list of all prior completed meetings and related resources.
 |------|------------|-----------|-------------------------------------------------------|-------|----------------------------------------------------------------------------------------------|-----------|
 | 0022 | 2023-01-17 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/88) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20230117.md) | n/a       |
 | 0023 | 2023-02-21 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/92) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20230221.md) | n/a       |
-| 0024 | 2023-03-21 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/94) | n/a   | Meeting lack attendance so was skipped.                                                      | n/a       |
+| 0024 | 2023-03-21 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/94) | n/a   | Meeting lacked attendance so was skipped.                                                      | n/a       |
 | 0025 | 2023-04-18 | 16:00 UTC | [Link](https://github.com/o3de/sig-network/issues/95) | n/a   | [Link](https://github.com/o3de/sig-network/blob/main/meetings/notes/sig-meeting-20230418.md) | n/a       |
 
 ### 2022

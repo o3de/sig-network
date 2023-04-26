@@ -28,7 +28,7 @@ None
 * Featured complete on Multiplayer Sample, only taking blockers or docs update into the `stabilization/2305` branch from April 19th, work will switch to `development` branch.
 
 ### Cloud Services
-* GameLift out of the box experience MPS being delivered
+* GameLift out of the box experience for MPS being delivered
 * Resource mapping tool links fixed
 
 See https://github.com/o3de/o3de/pulls?q=is%3Apr+label%3Asig%2Fnetwork+is%3Aclosed 
