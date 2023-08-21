@@ -99,6 +99,7 @@ In order to ensure that the `NullRenderer` is always enabled when launching the 
 ### What are the disadvantages of the feature?
 * This involves a mild refactor of a low-level library `AzFramework` .  
 * This will increase build time (minimally) due to the additional libraries that need to be built. (For headless versions of the library)  
+* The headless server will not have the ability to run any interactive console. That means that you will not have the ability to enter in any console commands (CVARS) interactively with the headless server. To retain this ability, the normal server launcher would be used instead.
 
 ### How will this be implemented or integrated into the O3DE environment?
 The new feature will be added as an additional target for the launchers.
