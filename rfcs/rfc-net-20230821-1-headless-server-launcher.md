@@ -29,7 +29,7 @@ These classes were designed to provide platform-specific services to the host ma
 
 What is needed is to split off the platform-specific services and their dependent library dependencies from `AzFramework` into its own library,  `AzFramework.NativeUI`.  The abstraction of the windowing and input devices makes this possible. The PIMPL idiom allows us to move the platform-specific implementations of the native window and input device interactions with the platform into the new library, and the inclusion of that library can be specified in targets that intend to use them. In the case of the headless server launcher, it will be intentionally omitted. 
 
-When omitted, the opaque pointers to the underlying PIMPL implementations will be `null` , and the abstraction layers that hosts these PIMPLs will be protected with a `null` check and perform a no-op in those cases. This will in effect disable any attempt to read or write to the native window or devices in headless mode (if any).
+When omitted, the opaque pointers to the underlying PIMPL implementations will be `null`, and the abstraction layers that hosts these PIMPLs will be protected with a `null` check and perform a no-op in those cases. This will in effect disable any attempt to read or write to the native window or devices in headless mode (if any).
 
 #### AzGameFramework, AzToolsFramework, and the UnifiedLauncher
 
