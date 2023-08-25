@@ -52,7 +52,7 @@ Currently, all three launcher types have build dependencies on:
 *   `AZ::AzGameFramework` 
 *   `Legacy::CryCommon` 
 
-As noted above, we will be adding a dependency of `AzFramework.NativeUI`  to `AzGameFramework` . 
+As noted above, we will be adding a dependency of `AzFramework.NativeUI` to `AzGameFramework`. 
 
 In order to support a headless version of [Server Launchers](https://github.com/o3de/o3de/blob/26e68948b32e38f97231274acf90e461b4236f13/Code/LauncherUnified/CMakeLists.txt#L51), we will need a separate CMAKE target omit the dependency of `AzFramework.NativeUI` from it. This means that for headless server launchers, it can no longer depend on `AzGameFramework` . We will need a headless version of `AzGameFramework` called `AzGameFramework.Headless` which will be the same as `AzGameFramework` but without the dependency on `AzFramework.NativeUI`.
 
