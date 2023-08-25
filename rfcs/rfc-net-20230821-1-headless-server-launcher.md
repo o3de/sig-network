@@ -7,7 +7,7 @@ The general use case for dedicated game servers do not need any graphical client
 ### Feature design description:
 To maintain backwards compatibility, an additional `HeadlessServerLauncher` target will be built in addition to the existing `ServerLauncher` target. The `HeadlessServerLauncher`  will behave in the follow ways:
 
-1.  On Windows, the server launcher will not spawn any native window and return immediately. Instead, it will behave like a true console application (It will be linked with `/SUBSYSTEM:CONSOLE` instead of `/SUBSYSTEM:WINDOWS`). It will direct all of its output to the current terminal / command window from where it is executed. If it double-clicked from a file explorer, it will behave as with any console application: A default windows terminal will launch displaying the console stdout/stderr of the server process.
+1.  On Windows, the server launcher will not spawn any native window and return immediately. Instead, it will behave like a true console application (It will be linked with `/SUBSYSTEM:CONSOLE` instead of `/SUBSYSTEM:WINDOWS`). It will direct all of its output to the current terminal / command window from where it is executed. If double-clicked from a file explorer, it will behave as a console application; a default Windows terminal will launch displaying the console stdout/stderr of the server process.
 2.  On Linux, the server launcher will not have any dependencies on any X11/XCB system libraries. It will not spawn any native window and will output any messages from stdout/stderr to the console.  
 3.  There is no server launcher support for any other platform at this time.
 
